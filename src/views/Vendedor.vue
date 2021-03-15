@@ -1,16 +1,22 @@
 <template>
-  <v-container>
-      <v-row>
-          <v-col>
-              Componente vendedor
-          </v-col>
-      </v-row>
-  </v-container>
+ <div>
+   <nav-bar></nav-bar>
+   <v-row>
+     <v-col>
+       <h2>Tarjeta del vendedor</h2>
+     </v-col>
+   </v-row>
+ </div>
 </template>
 
 <script>
+import NavBar from "@/components/NavBar.vue";
 export default {
 name: 'Vendedor',
+
+ components: {
+    NavBar,
+  },
 }
 </script>
 

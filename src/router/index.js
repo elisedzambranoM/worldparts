@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import NotFound from '@/views/NotFound.vue'
 import Vendedores from '@/views/Vendedores.vue'
-import Productos from '@/views/Vendedor.vue'
+import Vendedor from '@/views/Vendedor.vue'
 
 Vue.use(VueRouter)
 
@@ -11,7 +11,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      breadcrumb: [
+        { name: 'home' }
+      ]
+    }
   },
   {
     path: '*',
@@ -22,11 +27,16 @@ const routes = [
     path: '/vendedores',
     name: 'vendedores',
     component: Vendedores,
+    meta: {
+      breadcrumb: [
+        { name: 'vendedores' }
+      ]
+    }
   },
   {
     path: '/vendedor',
     name: 'vendedor',
-    component: Productos,
+    component: Vendedor,
   },
 ]
 
