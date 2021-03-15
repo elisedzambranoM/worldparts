@@ -21,13 +21,13 @@ export default {};
 <style scoped>
 .jumbo {
   height: 200px;
-  background: #c7c6c6;
+  background: #dbd6d6;
   color: white;
   text-align: center;
   padding-top: 80px;
 }
 .contenedor {
-  border: 1px solid grey;
+  border: 1px solid #dbd6d6;
   padding: 5px;
 }
 </style>

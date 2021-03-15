@@ -1,10 +1,10 @@
 <template>
   <v-toolbar dense :dark="true">
     <v-toolbar-title>Company</v-toolbar-title>
-    <v-btn depressed color="default">
+    <v-btn depressed color="default" @click="$router.push('/')">
       Home
     </v-btn>
-    <v-btn depressed color="default">
+    <v-btn depressed color="default" @click="$router.push('/vendedores')">
       Vendedores
     </v-btn>
     <v-btn depressed color="default">
