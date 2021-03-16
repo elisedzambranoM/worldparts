@@ -7,7 +7,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <div class="grafico"><v-progress-circular :value="50" color="success darken-2" :size="70">
+        <div class="grafico"><v-progress-circular class="mt-0" :value="50" color="success darken-2" :size="70">
           <div class="porcentaje">50%</div>
         </v-progress-circular></div>
         <div class="detalle_valor">

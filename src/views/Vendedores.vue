@@ -6,21 +6,31 @@
         <v-icon>mdi-chevron-right</v-icon>
       </template>
     </v-breadcrumbs>
-    <v-row>
-      <v-col>
-        <h2>Componente Vendedores</h2>
-      </v-col>
-    </v-row>
+    <v-container>
+      <v-row>
+        <v-col>
+          <h2>Monitor de Vendedores</h2>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <monitor-vendedores />
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
+import MonitorVendedores from "@/components/MonitorVendedores.vue";
+
 export default {
   name: "Vendedores",
 
   components: {
     NavBar,
+    MonitorVendedores,
   },
 
   data: () => ({

@@ -34,8 +34,8 @@ const routes = [
     }
   },
   {
-    path: '/vendedor',
-    name: 'vendedor',
+    path: '/vendedor/:id',
+    name: 'Vendedor',
     component: Vendedor,
   },
 ]
