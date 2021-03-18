@@ -1,11 +1,7 @@
 <template>
   <div>
     <nav-bar></nav-bar>
-    <v-breadcrumbs :items="items">
-      <template v-slot:divider>
-        <v-icon>mdi-chevron-right</v-icon>
-      </template>
-    </v-breadcrumbs>
+    <v-breadcrumbs :items="items" divider=">>"> </v-breadcrumbs>
     <v-container>
       <v-row>
         <v-col>
@@ -38,17 +34,17 @@ export default {
       {
         text: "Home",
         disabled: false,
-        href: "breadcrumbs_home",
+        href: "/",
       },
       {
-        text: "vendedores",
+        text: "Monitor de Vendedores",
         disabled: false,
-        href: "breadcrumbs_vendedores",
+        href: "vendedores",
       },
-      {
-        text: "Link 2",
-        disabled: true,
-        href: "breadcrumbs_pedidos",
+       {
+        text: "Ficha Vendedor",
+        disabled: false,
+        href: "/vendedor",
       },
     ],
   }),
